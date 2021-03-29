@@ -2,6 +2,10 @@ domain: tmax.io
 layout: go.kubebuilder.io/v2
 projectName: memcached-operator
 repo: github.com/taejune/memcached-operator
+resources:
+- group: memcached
+  kind: Memcached
+  version: v1alpha1
 version: 3-alpha
 plugins:
   go.sdk.operatorframework.io/v2-alpha: {}
